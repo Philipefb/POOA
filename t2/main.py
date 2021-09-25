@@ -36,7 +36,6 @@ def news_to_csv(lista_noticias, file_name):
     news.to_csv(file_name, index=False)    
 
 
-#Por exemplo: newsGeneric("https://www.uol.com.br/", ['submanchete submanchete-destaque'], uol.csv)
 news = newsGeneric("https://g1.globo.com/", 'feed-post-body')
 news_to_csv(news, "g1.csv")
 

@@ -16,6 +16,7 @@ Para a utilização são necessários a instalação da linguagem Python e do ge
 - [Pip](https://pip.pypa.io/en/stable/installation/)
 
 Também é necessário o download das bibliotecas Beautiful Soup 4 e Pandas
+
 `$ pip install bs4`
 `$ pip install pandas `
 

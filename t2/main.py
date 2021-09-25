@@ -1,6 +1,9 @@
 import requests
 from bs4 import BeautifulSoup #pip install bs4(Windows)
 import pandas as pd #pip install pandas(Windows)
+from datetime import datetime
+import os
+
 
 #Alunos: Guilherme, Philipe, Victória
 
@@ -32,8 +35,10 @@ def newsGeneric(url, classes):
 
 #Coloca em um arquivo csv a lista das noticias de um site
 def news_to_csv(lista_noticias, file_name):
+    now = datetime.now()
+    file_path = os.path.join("News",  now.strftime("%m_%d_%Y") + "_" + file_name)
     news = pd.DataFrame(lista_noticias, columns=['Titulo', 'Link'])
-    news.to_csv(file_name, index=False)    
+    news.to_csv(file_path, index=False)    
 
 
 news = newsGeneric("https://g1.globo.com/", 'feed-post-body')

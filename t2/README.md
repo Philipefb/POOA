@@ -8,7 +8,7 @@ O segundo trabalho teve como seu objetivo construir uma ferramente que encontre 
 - Princípio da responsabilidade única
 
 
-# 2- Configuração
+# 2 - Configuração
 
 Para a utilização são necessários a instalação da linguagem Python e do gerenciador de pacotes pip:
 

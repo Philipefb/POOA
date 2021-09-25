@@ -17,8 +17,10 @@ Para a utilização são necessários a instalação da linguagem Python e do ge
 
 Também é necessário o download das bibliotecas Beautiful Soup 4 e Pandas
 
-```$ pip install bs4
-$ pip install pandas``` 
+```
+$ pip install bs4
+$ pip install pandas
+``` 
 
 Para executar o programa é necessário apenas:
 

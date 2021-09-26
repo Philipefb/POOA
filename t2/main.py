@@ -7,11 +7,6 @@ import os
 
 #Alunos: Guilherme, Philipe, Victória
 
-#Para essa solução pensamos em uma estratégia a fim de garantir a funcionalidade do código mesmo com futuras alterações
-#e/ou extensões e previnir que as mudanças feitas em um módulo de propague para outros. Nesse caso nossa função newsGeneric()
-#recebe como paramentro a url do site de noticia desejado, um array com as classes para pesquisa e o nome do arquivo.csv que o 
-#usuário gostaria que guardasse os dados. Dessa forma é possível que a função seja feita para
-#diferentes sites de notícias, mudando apenas os parametros desejados, construímos assim um módulo aberto para extensão
 
 #Funçao generica que recebe como entrada a url do site do pagina
 # e um array com as classes para a pesquisa no site.
@@ -40,7 +35,7 @@ def news_to_csv(lista_noticias, file_name):
     news = pd.DataFrame(lista_noticias, columns=['Titulo', 'Link'])
     news.to_csv(file_path, index=False)    
 
-
+#Chamadas para sites diferentes com classes diferentes
 news = newsGeneric("https://g1.globo.com/", 'feed-post-body')
 news_to_csv(news, "g1.csv")
 

@@ -25,3 +25,13 @@ $ pip install pandas
 Para executar o programa é necessário apenas:
 
 `$ python3 main.py`
+
+# 3 - Extensões previstas no nosso projeto
+
+Para esse projeto pensamos em uma estratégia a fim de garantir a funcionalidade do código mesmo com futuras alterações
+e/ou extensões e previnir que as mudanças feitas em um módulo de propague para outros. Nesse caso nossa função newsGeneric()
+recebe como paramentro a url do site de noticia desejado e um array com as classes para pesquisa. Dessa forma é possível que a função seja feita para diferentes sites de notícias, mudando apenas os parametros desejados, a url e o array com as classes, construímos assim um módulo aberto para extensão.
+
+Pensando na facilidade para o usuário e melhor funcionalidade do código, um exemplo válido de extensão que poderia ser aplicado no nosso projeto
+seria aplicar um algoritmo de aprendizado de máquina para detectar tendências de notícias, verificar repetição de no minímo três vezes e arquivar em um array de tendencias, e também captar as diferenças entre os sites. 
+
